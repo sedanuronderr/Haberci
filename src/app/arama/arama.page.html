@@ -1,0 +1,99 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-icon class="contac"  [routerLink]="['/profil']" name="person"></ion-icon>
+
+
+
+
+<ion-icon id="notification-button"  name="notifications"></ion-icon>
+
+<h2 class="birinci">Merhaba sedanur Hanım</h2>
+<h4 class="ikinci"> anahtar kelimeleriniz ait haberler</h4>
+
+
+<ion-card >
+<ion-list>
+
+
+    <ion-label *ngFor="let anahtar of anahtarekle"  >
+
+      <ion-button   (click)="deleted(anahtar.id,anahtar)" color="danger">{{anahtar.value}}</ion-button>
+
+    </ion-label>
+  </ion-list>
+  </ion-card>
+
+    <ion-item>
+
+      <ion-input  #postText type="text" class="text" placeholder="Anahtar Kelimeler"></ion-input>
+
+    </ion-item>
+    <ion-button (click)="Created(postText)" style="margin-left: 290px;"  class="tasarim" expand="block" fill="clear" shape="round">
+    +ekle
+    </ion-button>
+
+
+
+
+
+
+
+
+
+
+<ion-item >
+  <ion-label position="floating" >hangi kelimeyi aramıştın</ion-label>
+  <ion-input  [(ngModel)]= "ruya" (ionChange) = "ruyabul(ruya)"></ion-input>
+</ion-item>
+
+
+<ion-list *ngIf="ruya =='' " >
+  <ion-item *ngFor="let gun of gunler" >
+    <ion-label> {{gun.gun}} </ion-label>
+    <ion-badge ></ion-badge>
+  </ion-item>
+
+</ion-list>
+
+<ion-list *ngIf="ruya">
+
+  <h6 class="kiraz">  {{ruya}} kelimesine ait {{posts.length-1}}adet sonuç bulunmuştur</h6>
+
+  <ion-item *ngFor="let post of posts"   [routerLink]="[ '/haberliste',post.wsUrl,post.wsName]" >
+
+   <label >
+
+  <h6 > {{post.wsName}}</h6>
+
+  <h6  >{{post.wsUrl}}</h6>
+   </label>
+   <h6 class="site">19.08.2021</h6>
+
+
+  </ion-item>
+
+
+ </ion-list  >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ion-content>

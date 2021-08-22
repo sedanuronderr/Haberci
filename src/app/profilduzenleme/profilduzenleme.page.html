@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>profilduzenleme</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-input  class="meslek" expand="block" fill="clear" shape="round"placeholder="   Meslek">
+
+  </ion-input>
+
+    <ion-input #job class="bilgi" placeholder=" Kişisel bilgiler" [(ngModel)]="job4"  >   </ion-input>
+
+    <ion-input  #job1  class="bilgi" placeholder="  Anahtar Kelimeler" [(ngModel)]="job5">    </ion-input>
+
+    <ion-input  #job2  class="bilgi" placeholder="  Web Siteleri" [(ngModel)]="job6" >    </ion-input>
+
+    <button type="submit" class="btn btn-primary btn-block"  [routerLink]="['/profil',job4,job5,job6]"
+     (click)="addJob(job.value,job1.value,job2.value)" >Save Changes</button>
+</ion-content>

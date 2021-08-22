@@ -9,18 +9,18 @@
         "createDefaultProgram": true
       },
       "extends": [
-        "plugin:@angular-eslint/ng-cli-compat",
-        "plugin:@angular-eslint/ng-cli-compat--formatting-add-on",
-        "plugin:@angular-eslint/template/process-inline-templates"
+        "plugin:@angular-nt/ng-cli-compat",
+        "plugin:@angular-nt/ng-cli-compat--formatting-add-on",
+        "plugin:@angular-nt/template/process-inline-templates"
       ],
       "rules": {
-        "@angular-eslint/component-class-suffix": [
+        "@angular-nt/component-class-suffix": [
           "error",
           {
             "suffixes": ["Page", "Component"]
           }
         ],
-        "@angular-eslint/component-selector": [
+        "@angular-nt/component-selector": [
           "error",
           {
             "type": "element",
@@ -28,7 +28,7 @@
             "style": "kebab-case"
           }
         ],
-        "@angular-eslint/directive-selector": [
+        "@angular-nt/directive-selector": [
           "error",
           {
             "type": "attribute",
@@ -40,7 +40,7 @@
     },
     {
       "files": ["*.html"],
-      "extends": ["plugin:@angular-eslint/template/recommended"],
+      "extends": ["plugin:@angular-nt/template/recommended"],
       "rules": {}
     }
   ]

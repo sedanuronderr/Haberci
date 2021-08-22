@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-icon class="back"  [routerLink]="[ '/arama']"  name="close-circle-outline">
+
+  </ion-icon>
+
+  <div class="col-md-3">
+
+  <div href=# class="d-inline"><img src="https://image.flaticon.com/icons/svg/236/236831.svg"
+    width=130px style="margin:0;margin-left: 120px;"><br><p class="pl-2 mt-2">
+      <a href="#" class="btn" style="color:#8f9096;font-weight:600;margin-left: 140px;">Edit Picture</a></p></div>
+
+
+</div>
+
+<ion-label class="ad" style="font-size: x-large;" > Gamze  </ion-label>
+
+<ion-input  class="meslek" expand="block" fill="clear" shape="round"placeholder="   İnsan Kaynakları">
+
+</ion-input>
+
+  <ion-input #job  class="bilgi" placeholder=" Kişisel bilgiler" [(ngModel)]="bilgiler">   </ion-input>
+
+  <ion-input #job1   class="bilgi" placeholder="  Anahtar Kelimeler" >    </ion-input>
+
+  <ion-input #job2  class="bilgi" placeholder="  Web Siteleri" >   </ion-input>
+
+  <button type="submit" class="btn btn-primary btn-block" [routerLink]="['/arama']" routerLinkActive="router-link-active"   > Edit</button>
+
+</ion-content>

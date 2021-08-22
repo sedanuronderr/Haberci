@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <table>
+    <tr>
+      <th class="haber"> haber</th>
+      <th class="ci">ci</th>
+      </tr>
+  </table>
+
+
+
+  <ion-input #username   class="ad1"placeholder=" username"  [(ngModel)]= "userr"> </ion-input>
+
+  <ion-input #password type="password" class="ad2"  placeholder="  Şifre"> </ion-input>
+
+  <ion-button    (click)= "token(username,password)" class="buton1" [routerLink]="[ '/arama']"  expand="block" fill="outline" color="dark">
+    Giris
+
+  </ion-button>
+
+  <ion-button class="buton"  color="dark" expand="block" fill="outline" >
+    Kayıt Ol
+  </ion-button>
+
+
+
+
+   <button  [routerLink]="[ '/email']" class="sifreunuttum">Şifremi unuttum</button>
+</ion-content>

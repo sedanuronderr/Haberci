@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <table>
+    <tr>
+      <th class="large-title">haber</th>
+      <th class="large">ci</th>
+      </tr>
+  </table>
+
+  <ion-input type="email"  class="ad2"  placeholder=" E-mail"> </ion-input>
+
+  <ion-button   class="buton"  [routerLink]="[ '/arama']"  color="dark" expand="block" fill="outline" >
+    Gönder
+  </ion-button>
+  
+   <ion-button class="buton1"  (click)="onClick()" expand="block" fill="outline" color="dark">
+     Giris
+   </ion-button>
+</ion-content>

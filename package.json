@@ -13,6 +13,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/animations": "^12.2.2",
     "@angular/common": "~12.1.1",
     "@angular/compiler": "~12.1.1",
     "@angular/core": "~12.1.1",
@@ -21,6 +22,9 @@
     "@angular/platform-browser-dynamic": "~12.1.1",
     "@angular/router": "~12.1.1",
     "@ionic/angular": "^5.5.2",
+    "@ng-toolkit/universal": "^1.1.21",
+    "ng2-toastr": "^4.1.2",
+    "ngx-toastr": "^14.1.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
