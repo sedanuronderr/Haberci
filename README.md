@@ -1,5 +1,5 @@
 # Haberci
-Projede TypeScript dili,HTML,CSS ve Angular framework'ü kullanılmıştır.
+## TypeScript dili,HTML,CSS ve Angular framework  were used in the project..
 
 
 <a>
